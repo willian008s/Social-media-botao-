@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <style>
+
+
+
+.middle{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+}
+
+
+.a {
+   display: inline-block;
+   width: 90px;
+   height: 90px;
+   background: blue;
+   margin: 10px auto;
+   border-radius: 30%;
+   color: white;
+   overflow: hidden;
+   position: relative;
+}
+
+.a span{
+   line-height: 50px ;
+   font-size: 20px ;
+   transition:0.5s linear }
+
+
+.a span:hover {
+
+   transform: scale(1.20 );
+   color: red;
+
+}
+
+.a:before{
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: green;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+
+}
+
+.a:hover::before{
+   animation: a 0.5s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes a {
+   0%{
+      left: -110%;
+      top: 90%;
+   }
+   50%{
+      left: 10%;
+      top: -30%;
+   }
+   100%{
+
+    top: -10%;
+    left: -10%;
+
+
+   }
+}
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+   <div class="middle">
+      <a class="a" href="#"><span class="material-symbols-outlined ">shopping_cart_checkout</span></a></li>
+    <a class="a" href="#"><span class="material-symbols-outlined ">shopping_cart_checkout</span></a></li>
+    <a class="a" href="#"><span class="material-symbols-outlined ">shopping_cart_checkout</span></a></li>
+    <a class="a" href="#"><span class="material-symbols-outlined ">shopping_cart_checkout</span></a></li>
+
+  </div>
+</body>
+</html>
